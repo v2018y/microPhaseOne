@@ -2,8 +2,8 @@ version: '3.0'
 
 services:
   token: 
-    container_name: vany-token
-    image: vany-token
+    container_name: vany-micro-phase
+    image: vany-micro-phase
     build: 
       context: .
       dockerfile: Dockerfile
@@ -13,6 +13,8 @@ services:
       - 7001:7001
       - 7002:7002
       - 7003:7003
+      - 7004:7004
+      - 7005:7005
     networks:
       - servicenet 
 
